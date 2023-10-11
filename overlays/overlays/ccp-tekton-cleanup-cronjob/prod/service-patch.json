@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-tekton-cleanup-cronjob-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "ccp-tekton-cleanup-cronjob-prod"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-prod-namespace"
+    }
+]

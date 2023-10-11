@@ -1,0 +1,32 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-events-service-deployment-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/image",
+        "value": "image-placeholder-for-ccp-events-service-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/name",
+        "value": "ccp-events-service-container"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/envFrom/0/secretRef/name",
+        "value": "ccp-events-service-secrets-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/matchLabels/app",
+        "value": "ccp-events-service-staging"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-staging-namesp"
+    }
+]

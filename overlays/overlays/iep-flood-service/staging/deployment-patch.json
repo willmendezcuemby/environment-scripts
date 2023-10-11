@@ -1,0 +1,32 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "iep-flood-service-deployment-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/image",
+        "value": "image-placeholder-for-iep-flood-service-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/name",
+        "value": "iep-flood-service-container"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/envFrom/0/secretRef/name",
+        "value": "iep-flood-service-secrets-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/matchLabels/app",
+        "value": "iep-flood-service-staging"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-staging-namesp"
+    }
+]

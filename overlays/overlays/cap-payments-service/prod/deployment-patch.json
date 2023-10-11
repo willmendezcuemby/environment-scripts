@@ -1,0 +1,32 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "cap-payments-service-deployment-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/image",
+        "value": "image-placeholder-for-cap-payments-service-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/name",
+        "value": "cap-payments-service-container"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/envFrom/0/secretRef/name",
+        "value": "cap-payments-service-secrets-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/matchLabels/app",
+        "value": "cap-payments-service-prod"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-prod-namespace"
+    }
+]

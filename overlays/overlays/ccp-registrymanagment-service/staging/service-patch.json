@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-registrymanagment-service-staging"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "ccp-registrymanagment-service-staging"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-staging-namesp"
+    }
+]

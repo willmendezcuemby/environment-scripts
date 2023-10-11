@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-billing-cronjob-oops-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "ccp-billing-cronjob-oops-prod"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-prod-namespace"
+    }
+]

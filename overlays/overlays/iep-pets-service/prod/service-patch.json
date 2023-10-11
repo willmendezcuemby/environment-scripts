@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "iep-pets-service-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "iep-pets-service-prod"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-prod-namespace"
+    }
+]

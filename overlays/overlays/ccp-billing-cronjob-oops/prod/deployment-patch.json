@@ -1,0 +1,32 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-billing-cronjob-oops-deployment-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/image",
+        "value": "image-placeholder-for-ccp-billing-cronjob-oops-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/name",
+        "value": "ccp-billing-cronjob-oops-container"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/envFrom/0/secretRef/name",
+        "value": "ccp-billing-cronjob-oops-secrets-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/matchLabels/app",
+        "value": "ccp-billing-cronjob-oops-prod"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-prod-namespace"
+    }
+]

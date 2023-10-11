@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-blockchain-management-service-dev"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "ccp-blockchain-management-service-dev"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-dev-namespace"
+    }
+]

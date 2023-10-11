@@ -1,0 +1,32 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-performance-metrics-service-deployment-dev"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/image",
+        "value": "image-placeholder-for-ccp-performance-metrics-service-dev"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/name",
+        "value": "ccp-performance-metrics-service-container"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/template/spec/containers/0/envFrom/0/secretRef/name",
+        "value": "ccp-performance-metrics-service-secrets-dev"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/matchLabels/app",
+        "value": "ccp-performance-metrics-service-dev"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-dev-namespace"
+    }
+]

@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "ccp-autoscaling-service-dev"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "ccp-autoscaling-service-dev"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-dev-namespace"
+    }
+]

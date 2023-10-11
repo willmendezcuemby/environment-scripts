@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ccp-performancelogs-agent-staging
+  namespace: argocd
+spec:
+  project: staging
+  source:
+    repoURL: https://github.com/willmendezcuemby/gitops-ccp
+    targetRevision: HEAD
+    path: ./overlays/overlays/ccp-performancelogs-agent/staging
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: my-staging-namesp
+  syncPolicy:
+    automated: {}

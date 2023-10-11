@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ccp-by-email-notification-dev
+  namespace: argocd
+spec:
+  project: dev
+  source:
+    repoURL: https://github.com/willmendezcuemby/gitops-ccp
+    targetRevision: HEAD
+    path: ./overlays/overlays/ccp-by-email-notification/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: my-dev-namespace
+  syncPolicy:
+    automated: {}

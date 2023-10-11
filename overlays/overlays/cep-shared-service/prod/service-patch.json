@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "cep-shared-service-prod"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "cep-shared-service-prod"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-prod-namespace"
+    }
+]

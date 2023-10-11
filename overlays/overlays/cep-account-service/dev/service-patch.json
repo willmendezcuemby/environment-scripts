@@ -1,0 +1,17 @@
+[
+    {
+        "op": "replace",
+        "path": "/metadata/name",
+        "value": "cep-account-service-dev"
+    },
+    {
+        "op": "replace",
+        "path": "/spec/selector/app",
+        "value": "cep-account-service-dev"
+    },
+    {
+        "op": "add",
+        "path": "/metadata/namespace",
+        "value": "my-dev-namespace"
+    }
+]
